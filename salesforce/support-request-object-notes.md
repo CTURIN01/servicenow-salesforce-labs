@@ -21,3 +21,13 @@
 - [ ] Create 5 sample Support Request records
 - [ ] Walk each record through status lifecycle: Open → In Progress → Resolved
 - [ ] Build a report: open requests grouped by priority
+
+## Troubleshooting Notes
+### "We've hit a snag" on list view
+- **Cause:** Custom object has no Tab created, so it can't be added to app navigation
+- **Fix:** Setup → Tabs → Custom Object Tabs → New → Select Support Request → Save
+- Then add to app nav via App Launcher → pencil icon → Add More Items
+
+### "Support Requests" not appearing in Add Nav Items search
+- **Cause:** Tab doesn't exist yet — Salesforce requires a Tab before an object appears in nav search
+- **Fix:** Create the Tab first (see above), then the object appears in nav search
