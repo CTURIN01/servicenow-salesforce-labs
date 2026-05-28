@@ -31,3 +31,24 @@
 ### "Support Requests" not appearing in Add Nav Items search
 - **Cause:** Tab doesn't exist yet — Salesforce requires a Tab before an object appears in nav search
 - **Fix:** Create the Tab first (see above), then the object appears in nav search
+
+## Sample Records Created
+| Record | Priority | Environment | Status |
+|---|---|---|---|
+| SR-0001 | High | Production | Open |
+| SR-0002 | Medium | Staging | In Progress |
+| SR-0003 | High | Production | Open |
+| SR-0004 | Low | Development | Resolved |
+| SR-0005 | High | Staging | In Progress |
+
+## Report Built
+- **Name:** Open Support Requests by Priority
+- **Columns:** Support Request Name, Priority, Environment, Status
+- **Total Records:** 5
+- Shows 3 High priority tickets (2 Open in Production, 1 In Progress in Staging)
+- Demonstrates real-world TSE triage view — High priority Production issues surface first
+
+## Additional Troubleshooting Note
+### Report type not appearing in Create Report search
+- **Cause:** "Allow Reports" was not enabled on the custom object at creation time
+- **Fix:** Object Manager → Support Request → Edit → check Allow Reports → Save
